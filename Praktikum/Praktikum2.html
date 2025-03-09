@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Form Data Diri</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <label><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+            </div>
+            
+            <div class="form-group">
+                <label>Hobi:</label>
+                <label><input type="checkbox" name="hobi" value="Musik"> Musik</label>
+                <label><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="kota">Pilih Kota:</label>
+                <select id="kota" name="kota">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Bogor">Bogor</option>
+                    <option value="Bekasi">Bekasi</option>
+                    <option value="Cikarang">Cikarang</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="file">Upload Foto:</label>
+                <input type="file" id="file" name="foto">
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
